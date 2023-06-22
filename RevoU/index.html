@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Suhu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Suhu</h1>
+    <form id="temperature-form">
+      <label for="temperature">Temperature:</label>
+      <input type="text" id="temperature" name="temperature" placeholder="Enter temperature" required>
+      <select id="scale" name="scale">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+      <button type="submit">Konversi</button>
+      <button type="button" id="reset-btn">Reset</button>
+      <button type="button" id="reserve-btn">Reserve</button>
+    </form>
+    <div id="result" class="result-section">
+      <p id="converted-value"></p>
+      <p id="explanation"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
